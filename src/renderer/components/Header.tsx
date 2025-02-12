@@ -63,7 +63,7 @@ export default function Header(props: Props) {
                         noWrap 
                         className="ml-2 self-center"
                     >
-                        {getModelDisplayName({...settings, aiProvider: currentSession.aiProvider || settings.aiProvider}, currentSession.type)}
+                        {getModelDisplayName({...settings, aiProvider: currentSession.aiProvider || settings.aiProvider}, currentSession.type || 'chat')}
                     </Typography>
                 </Typography>
                 <Toolbar />
